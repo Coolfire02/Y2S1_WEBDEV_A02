@@ -1,0 +1,157 @@
+/* About Me.html css */
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+
+@media screen and (max-width: 768px) {
+    .picture-card-img {
+        max-width: 28vw !important;
+        max-height: 28vw !important;
+    }
+
+    .picture-description {
+        font-size: 0.8em !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+.hobby {
+    min-height: 80%;
+}
+
+.skills {
+    position: relative;
+}
+
+.skill-unit {
+    margin-bottom: 5%;
+}
+
+.skill-title-font {
+	color: #f2f0e6;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Rubik', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@keyframes hoverskill {
+    0% {
+
+    }
+
+    20% {
+        font-size: 1.25em; 
+    }
+
+    40% {
+        font-size: 1.3em; 
+    }
+
+    60% {
+        font-size: 1.25em; 
+    }
+}
+
+
+
+.skill-left {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.25em;
+    margin-left: 10%;
+    float: left;
+    border-radius: 10%;
+    animation-play-state: paused;
+    background: linear-gradient(#6b8877, #545a63);
+    padding: 2%; 
+    width: 12%;
+    height: auto;
+    outline: 0;
+    overflow: hidden;
+}
+
+.skill-left:hover {
+    animation: hoverskill 2s linear infinite;
+    animation-play-state: running;  
+}
+
+
+.skill-right {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.25em;
+    float:inline-end;
+    margin-left: 25%;
+
+    border-radius: 2%;
+    padding: 2%; 
+    width: 20%;
+    height: auto;  
+}
+
+.picture-card {
+    position: absolute;
+}
+
+.picture-card-img {
+    max-width: 24vw;
+    max-height: 24vw;
+    transition: 0.12s ease;
+    border: 10px solid #f0fdff;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.picture-card-img video {
+    overflow: hidden !important;
+}
+
+
+.picture-card:hover .picture-card-img {
+    max-width: 25vw;
+    max-height: 25vw;
+    border: 10px solid #f0fdff;
+}
+
+.picture-card:hover .picture-description {
+    font-size: 1.35vw;
+}
+
+.picture-description {
+    background: #f0fdff;
+    transition: 0.15s ease;
+    height: 138%;
+    border-radius: 0% 0% 30% 30%;
+
+    /*Not sure if this is best way, to remove rough edges but it works:*/
+    z-index: 1;
+    margin-top: -0.1%;
+    font-size: 1.1vw;
+}
+
+.picture-text {
+    /*Text color*/
+    color: #332a32;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 3%;
+    margin-top: -2%;
+    padding-bottom: 2%;
+}
+
+.picture-description-detailed {
+    position: absolute;
+    min-width: 25vw;
+}
+
+.hobby-text {
+    padding-top: 10%;
+	font-size: 2vw;
+    margin-left: 25%;
+}
