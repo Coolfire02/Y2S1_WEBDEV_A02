@@ -94,9 +94,11 @@ function main() {
     loader = document.querySelector(".loader");
     content = document.querySelector(".pageloaded");
     
-    $.getJSON("quotes.json", function(json)
+    $.getJSON("https://raw.githubusercontent.com/Coolfire02/Y2S1_WEBDEV_A02/master/html/quotes.json", function(json)
     {
-        document.getElementById("random-load-text").innerHTML = json['quotes'][Math.floor(Math.random() * json['quotes'].length)];
+        console.log(json);
+        console.log(json["quotes"]);
+        document.getElementById("random-load-text").innerHTML = json["quotes"][Math.floor(Math.random() * json["quotes"].length)];
     });
 
     if(sessionStorage.getItem("loaded") == null)

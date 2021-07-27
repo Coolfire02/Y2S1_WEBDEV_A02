@@ -194,6 +194,7 @@
 .random-load-text {
     margin-top: 100px;
     font-size: 2em;
+    max-width: 60vw;
     color: #f2f0e6;
     font-style:italic;
 }
