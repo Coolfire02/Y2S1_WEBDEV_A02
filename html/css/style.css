@@ -1,10 +1,7 @@
 
-  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
 
 	/*Main Page, My about me image*/
-	.about-me-overview-picture {
-		margin-right: 1% !important;
-	}
 	.ending-paragraph{
 		padding-bottom: 22vh !important;
 	}
@@ -21,13 +18,20 @@
 	.left-header-text{
 		font-size: 2.5em !important;
 	}
+	.left-text-end {
+		font-size: 1.2em !important;
+	}
 	.project-header-text {
 		font-size: 2.5em !important;
 	}
 	.right-text {
 		font-size: 0.7em !important;
 	}
-	
+
+	.banner
+	{
+		margin: 8% 10% 5% 10% !important;
+	}
 
 	/*Main Page, My about me image*/
 	.img-responsive {
@@ -37,6 +41,7 @@
 	.about-me-overview-picture {
 		float: none !important;
 		margin-top: 10% !important;
+		width: 80% !important;
 	}
 	.ending-paragraph{
 		padding-bottom: 10vh !important;
@@ -53,13 +58,23 @@
 	.bot-bar {
 		font-size: 0.8em !important;
 	}
+	.banner
+	{
+		margin: 14% 10% 5% 10% !important;
+	}
+    .players
+    {
+        font-size: 1em !important; 
+        padding-left: 1.7% !important;
+        padding-right: 1.7% !important;
+    }
 }
 
 
   @media screen and (max-width: 768px) {
 	/*Main Font Ratio*/
 	.container {
-		font-size: 0.6em !important;
+		font-size: 1em !important;
 	}
 
 	.app-picture-text h1 {
@@ -69,13 +84,20 @@
 	.app-picture-text {
 		font-size: 3vw !important;
 	}
+	.banner
+	{
+		margin: 16% 10% 5% 10% !important;
+	}
+	.programmer-cout {
+		font-size: 1.5vh !important;
+	}
 
 	.navbar {
 		text-align: center !important;
 	}
 
 	.sticky {
-		font-size: 1.4em !important;
+		font-size: 1em !important;
 	}
 
 	.carousel {
@@ -90,16 +112,22 @@
 		
 		font-size: 1.2em !important;
 		
-		max-width: 50% !important;
+		max-width: 70% !important;
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
+    .players
+    {
+        font-size: 0.8em !important; 
+        padding-left: 1.7% !important;
+        padding-right: 1.7% !important;
+    }
 }
 
 @media screen and (max-width: 425px) {
 	/*Main Font Ratio*/
 	.container {
-		font-size: 0.5em !important;
+		font-size: 0.6em !important;
 	}
 
 	.app-picture-text h1 {
@@ -109,15 +137,34 @@
 	.app-picture-text {
 		font-size: 4vw !important;
 	}
+	.banner
+	{
+		margin: 35% 10% 5% 10% !important;
+	}
 
 	.carousel::before, .carousel::after, .carousel__prev, .carousel__next {
 		width: 2rem !important;
 		height: 2rem !important;
 	}
 
+	.right-text {
+		max-width: 85% !important;
+	}
+
 	.bot-bar {
 		font-size: 0.6em !important;
 	}
+
+    .circle {
+        height: 10vw !important;
+        width: 10vw !important;
+    }
+    .players
+    {
+        font-size: 1em !important; 
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
 }
 
 
@@ -125,6 +172,84 @@
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+    /*Disable cursor use custom cursor instead*/
+    cursor: none;
+}
+
+.loader {
+    height: 100%;
+    width: auto;
+    background-image: url(../Images/Background_Try2.png);
+    display: block;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s ease;
+
+}
+
+.random-load-text {
+    margin-top: 100px;
+    font-size: 2em;
+    color: #f2f0e6;
+    font-style:italic;
+}
+
+.spin {
+    height: 50px;
+    animation: rotate 3s linear infinite;
+    transform-origin: bottom center;
+    margin-top: -17%;
+}
+
+.pageloaded {
+    opacity:0;
+    display:none;
+}
+
+.circle {
+    display: inline-block;
+    background-color: purple;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: grow 1.5s linear infinite;
+    margin: -10px;
+}
+.circle:nth-child(2)
+{
+    background-color: palevioletred;
+    animation-delay: 0.6s;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}
+
+.cursor {
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 2px solid rgb(255, 225, 225);
+    background-color: rgb(47, 46, 46);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100; /*On top of all other classes*/
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform .4 ease, opacity .2 ease, border-color .2 ease, background-color .2 ease;
+
 }
 
 
@@ -290,7 +415,7 @@ a:active {
 .banner {
 	display: block;
 	width: 80%;
-	margin: 4% 10% 5% 10%;
+	margin: 7% 10% 5% 10%;
 }
 
 .app-picture-text {
@@ -378,12 +503,33 @@ a:active {
 	text-align: right;
 }
 
+.img-responsive {
+	border-radius: 50%;
+	width: 100%;
+}
+
 .about-me-overview-picture {
 	float: right;
 	margin-top: -6%;
+	width: 20%;
 	max-width: 400w;
 	height: auto;
-	margin-right: 2%;
+	margin-right: 15%;
+	
+}
+
+.players
+{
+    display: block;
+    background-color: rgb(66, 80, 66);
+    border-radius: 0.3rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1.2em;
 }
 
 .ending-paragraph{

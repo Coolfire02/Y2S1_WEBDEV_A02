@@ -1,5 +1,108 @@
 /* Projects.html css */
 
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+
+  }
+
+@media screen and (max-width: 1200px) {
+	.card-bottomright-iconbar ul {
+		width: 2.5vw !important;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.card-bottomright-iconbar ul {
+		width: 3vw !important;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.large-card
+	{
+		width: 80% !important;
+	}
+	.card-title-left-withsub {
+		font-size: 5vw !important;
+	}
+	.card-title-left-subtitle {
+		font-size: 2.1vw !important;
+	}
+	.card-title-left-withsub::after {
+		margin-top: 5% !important;
+	}
+	.card-main-text {
+		top: 30% !important;
+		font-size: 3vw !important;
+		max-height: 65% !important;
+		max-width: 80% !important;
+		padding-bottom: 5% !important;
+	}
+	.card-bottomright-iconbar ul {
+		width: 4.8vw !important;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.large-card
+	{
+		width: 92% !important;
+	}
+	.card-title-left-withsub {
+		font-size: 7vw !important;
+	}
+	.card-title-left-subtitle {
+		font-size: 2.7vw !important;
+		top: 21.6% !important;
+	}
+	.card-title-left-withsub::after {
+		margin-top: 5% !important;
+	}
+	.card-main-text {
+		top: 36% !important;
+		font-size: 5vw !important;
+		max-height: 65% !important;
+		max-width: 80% !important;
+		padding-bottom: 10% !important;
+	}
+	.card-bottomright-iconbar ul {
+		width: 6.5vw !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.large-card
+	{
+		width: 95% !important;
+	}
+	.card-title-left-withsub {
+		font-size: 8vw !important;
+	}
+	.card-title-left-subtitle {
+		font-size: 3.5vw !important;
+		top: 22.6% !important;
+	}
+	.card-title-left-withsub::after {
+		margin-top: 5% !important;
+	}
+	.card-main-text {
+		top: 38% !important;
+		font-size: 6vw !important;
+		max-height: 65% !important;
+		max-width: 80% !important;
+		padding-bottom: 10% !important;
+	}
+	.card-bottomright-iconbar ul {
+		width: 7.5vw !important;
+	}
+}
+
+.hide-x {
+	min-width: 100% !important;
+
+	overflow-x:hidden !important;
+}
+
 .year_title {
 	font-family: 'Noto Serif', serif;
 	color: #FBFAF5;
@@ -22,8 +125,8 @@
 
 .large-card {
 	display: block;
-	width: 60% !important;
-	height: auto !important;
+	width: 60%;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -138,6 +241,7 @@
 	max-width: 60%; /*Stops weird glitching when hovering on right side*/
 	top: 26%;
 	left: 5%;
+	padding-bottom: 2%;
 	position: absolute;
 
 }

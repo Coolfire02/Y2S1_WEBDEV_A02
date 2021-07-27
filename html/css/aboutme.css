@@ -14,10 +14,41 @@
     .picture-description {
         font-size: 0.8em !important;
     }
+    .skill-right {
+        margin-left: 0% !important;
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 426px)
+{
+    .picture-card {
+        opacity: 1 !important;
+    }
+    .feature {
+        opacity: 0 !important;
+    }
 }
 
 @media screen and (max-width: 425px) {
-
+    .skill-right {
+        margin-left: -20% !important;
+        width: 100% !important;
+    }
+    .skill-left {
+        width: 16% !important;
+    }
+    .picture-card {
+        opacity: 0 !important;
+    }
+    .feature {
+        opacity: 1 !important;
+    }
+    .hobby-text 
+    {
+        text-align: center;
+        margin-left: 0% !important;
+    }
 }
 
 .hobby {
@@ -66,7 +97,7 @@
     text-align: center;
     vertical-align: middle;
     font-size: 1.25em;
-    margin-left: 10%;
+    margin-left: 12%;
     float: left;
     border-radius: 10%;
     animation-play-state: paused;
@@ -99,6 +130,37 @@
 
 .picture-card {
     position: absolute;
+}
+
+.feature-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    height: auto;
+    border: 10px solid #f0fdff;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.feature {
+    margin-top: 10%;
+}
+
+.feature-description
+{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffd2d2;
+    color: #1a1413;
+    transition: 0.15s ease;
+    height: auto;
+    border-radius: 0% 0% 15% 15%;
+    padding-bottom: 3%;
+    /*Not sure if this is best way, to remove rough edges but it works:*/
+    z-index: 1;
+    margin-top: -0.1%;
+    font-size: 1.7em;
 }
 
 .picture-card-img {
@@ -135,6 +197,8 @@
     margin-top: -0.1%;
     font-size: 1.1vw;
 }
+
+
 
 .picture-text {
     /*Text color*/
