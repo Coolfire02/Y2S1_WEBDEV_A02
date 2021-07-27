@@ -6,10 +6,12 @@
 //Custom Cursor!
 //Loading screen that occurs once per session
 //My Minecraft server's player count. (Via mcAPI)
-
-//Todo:
 //Random message poping up in loading screen
 
+//Todo:
+// Focus on adding effects and animations
+// Turn on and off rain (Local storage)
+// 
 
 let cursor;
 let link;
