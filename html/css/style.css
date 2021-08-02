@@ -1,171 +1,4 @@
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-
-	/*Main Page, My about me image*/
-	.ending-paragraph{
-		padding-bottom: 22vh !important;
-	}
-
-
-  }
-
-@media screen and (max-width: 1200px) {
-
-	/*Main Font Ratio*/
-	.container {
-		font-size: 1.2em !important;
-	}
-	.left-header-text{
-		font-size: 2.5em !important;
-	}
-	.left-text-end {
-		font-size: 1.2em !important;
-	}
-	.project-header-text {
-		font-size: 2.5em !important;
-	}
-	.right-text {
-		font-size: 0.7em !important;
-	}
-
-	.banner
-	{
-		margin: 8% 10% 5% 10% !important;
-	}
-
-	/*Main Page, My about me image*/
-	.img-responsive {
-		margin-top: 6% !important;
-		max-width: 40% !important;
-	}
-	.about-me-overview-picture {
-		float: none !important;
-		margin-top: 10% !important;
-		width: 80% !important;
-	}
-	.ending-paragraph{
-		padding-bottom: 10vh !important;
-	}
-
-	.bot-bar {
-		font-size: 1.0em !important;
-	}
-
-  
-}
-
-@media screen and (max-width: 1024px) {
-	.bot-bar {
-		font-size: 0.8em !important;
-	}
-	.banner
-	{
-		margin: 14% 10% 5% 10% !important;
-	}
-    .players
-    {
-        font-size: 1em !important; 
-        padding-left: 1.7% !important;
-        padding-right: 1.7% !important;
-    }
-}
-
-
-  @media screen and (max-width: 768px) {
-	/*Main Font Ratio*/
-	.container {
-		font-size: 1em !important;
-	}
-
-	.app-picture-text h1 {
-		font-size: 7vw !important;
-	}
-
-	.app-picture-text {
-		font-size: 3vw !important;
-	}
-	.banner
-	{
-		margin: 16% 10% 5% 10% !important;
-	}
-	.programmer-cout {
-		font-size: 1.5vh !important;
-	}
-
-	.navbar {
-		text-align: center !important;
-	}
-
-	.sticky {
-		font-size: 1em !important;
-	}
-
-	.carousel {
-		width: 80% !important;
-		height: 52vw !important;
-		max-height: auto !important;
-	}
-
-	.right-text {
-		float: none !important;
-		margin-top: 5%;
-		
-		font-size: 1.2em !important;
-		
-		max-width: 70% !important;
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
-    .players
-    {
-        font-size: 0.8em !important; 
-        padding-left: 1.7% !important;
-        padding-right: 1.7% !important;
-    }
-}
-
-@media screen and (max-width: 425px) {
-	/*Main Font Ratio*/
-	.container {
-		font-size: 0.6em !important;
-	}
-
-	.app-picture-text h1 {
-		font-size: 8vw !important;
-	}
-
-	.app-picture-text {
-		font-size: 4vw !important;
-	}
-	.banner
-	{
-		margin: 35% 10% 5% 10% !important;
-	}
-
-	.carousel::before, .carousel::after, .carousel__prev, .carousel__next {
-		width: 2rem !important;
-		height: 2rem !important;
-	}
-
-	.right-text {
-		max-width: 85% !important;
-	}
-
-	.bot-bar {
-		font-size: 0.6em !important;
-	}
-
-    .circle {
-        height: 10vw !important;
-        width: 10vw !important;
-    }
-    .players
-    {
-        font-size: 1em !important; 
-        padding-left: 2% !important;
-        padding-right: 2% !important;
-    }
-}
 
 
 *{
@@ -296,7 +129,7 @@ a:active {
 
 .first-container {
 	/* Full height */
- 	height: 100% !important;
+ 	height: 100% ;
 	max-height: 100%;
  	background-position: center;
  	background-repeat: no-repeat;
@@ -320,7 +153,7 @@ a:active {
 	margin-right: 5%;
 	color: #FBFAF5;
 	display: block;
-	font-family: 'Ubuntu Mono', monospace !important;
+	font-family: 'Ubuntu Mono', monospace ;
 }
 
 .cout-bot {
@@ -369,11 +202,11 @@ a:active {
 	cursor: pointer;
 }
 .navbar ul li:hover{
-	color: #FBFAF5 !important; /*Using Important to reflect on Active Marked tab*/
+	color: #FBFAF5 ; /*Using Important to reflect on Active Marked tab*/
 }
 
 .active {
-	color: #FBFAF5 !important;
+	color: #FBFAF5 ;
 }
 
 .bot-bar {
@@ -398,7 +231,7 @@ a:active {
 	cursor: pointer;
 }
 .bot-bar ul li:hover{
-	color: #FBFAF5 !important; /*Using Important to reflect on Active Marked tab*/
+	color: #FBFAF5 ; /*Using Important to reflect on Active Marked tab*/
 }
 
 .scene1 {
@@ -438,7 +271,7 @@ a:active {
 }
 
 .app-picture-text p {
-	font-family: monaco, Consolas, "Lucida Console", monospace !important;
+	font-family: monaco, Consolas, "Lucida Console", monospace ;
 }
 
 .funky-text-font {
@@ -489,9 +322,9 @@ a:active {
 }
 
 .project-showcase-title {
-	font-size: 2em !important;
-	padding-top: 4% !important;
-	padding-bottom: 2% !important;
+	font-size: 2em ;
+	padding-top: 4% ;
+	padding-bottom: 2% ;
 
 }
 
@@ -560,7 +393,7 @@ a:active {
 }
 
 .blue-after-text-line:after {
-	background-color: #6D929B !important;
+	background-color: #6D929B ;
 }
 
 .center-header-text {
@@ -857,3 +690,172 @@ a:active {
   .carousel::after {
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }
+
+
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+
+	/*Main Page, My about me image*/
+	.ending-paragraph{
+		padding-bottom: 22vh ;
+	}
+
+
+  }
+
+@media screen and (max-width: 1200px) {
+
+	/*Main Font Ratio*/
+	.container {
+		font-size: 1.2em ;
+	}
+	.left-header-text{
+		font-size: 2.5em ;
+	}
+	.left-text-end {
+		font-size: 1.2em ;
+	}
+	.project-header-text {
+		font-size: 2.5em ;
+	}
+	.right-text {
+		font-size: 0.7em ;
+	}
+
+	.banner
+	{
+		margin: 8% 10% 5% 10% ;
+	}
+
+	/*Main Page, My about me image*/
+	.img-responsive {
+		margin-top: 6% ;
+		max-width: 40% ;
+	}
+	.about-me-overview-picture {
+		float: none ;
+		margin-top: 10% ;
+		width: 80% ;
+	}
+	.ending-paragraph{
+		padding-bottom: 10vh ;
+	}
+
+	.bot-bar {
+		font-size: 1.0em ;
+	}
+
+  
+}
+
+@media screen and (max-width: 1024px) {
+	.bot-bar {
+		font-size: 0.8em ;
+	}
+	.banner
+	{
+		margin: 14% 10% 5% 10% ;
+	}
+    .players
+    {
+        font-size: 1em ; 
+        padding-left: 1.7% ;
+        padding-right: 1.7% ;
+    }
+}
+
+
+  @media screen and (max-width: 768px) {
+	/*Main Font Ratio*/
+	.container {
+		font-size: 1em ;
+	}
+
+	.app-picture-text h1 {
+		font-size: 7vw ;
+	}
+
+	.app-picture-text {
+		font-size: 3vw ;
+	}
+	.banner
+	{
+		margin: 16% 10% 5% 10% ;
+	}
+	.programmer-cout {
+		font-size: 1.5vh ;
+	}
+
+	.navbar {
+		text-align: center ;
+	}
+
+	.sticky {
+		font-size: 1em ;
+	}
+
+	.carousel {
+		width: 80% ;
+		height: 52vw ;
+		max-height: auto ;
+	}
+
+	.right-text {
+		float: none ;
+		margin-top: 5%;
+		
+		font-size: 1.2em ;
+		
+		max-width: 70% ;
+		margin-left: auto ;
+		margin-right: auto ;
+	}
+    .players
+    {
+        font-size: 0.8em ; 
+        padding-left: 1.7% ;
+        padding-right: 1.7% ;
+    }
+}
+
+@media screen and (max-width: 425px) {
+	/*Main Font Ratio*/
+	.container {
+		font-size: 0.6em ;
+	}
+
+	.app-picture-text h1 {
+		font-size: 8vw ;
+	}
+
+	.app-picture-text {
+		font-size: 4vw ;
+	}
+	.banner
+	{
+		margin: 35% 10% 5% 10% ;
+	}
+
+	.carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+		width: 2rem ;
+		height: 2rem ;
+	}
+
+	.right-text {
+		max-width: 85% ;
+	}
+
+	.bot-bar {
+		font-size: 0.6em ;
+	}
+
+    .circle {
+        height: 10vw ;
+        width: 10vw ;
+    }
+    .players
+    {
+        font-size: 1em ; 
+        padding-left: 2% ;
+        padding-right: 2% ;
+    }
+}
