@@ -152,7 +152,7 @@ function main() {
     loader = document.querySelector(".loader");
     content = document.querySelector(".pageloaded");
     
-    $.getJSON("https://raw.githubusercontent.com/Coolfire02/Y2S1_WEBDEV_A02/master/html/quotes.json", function(json)
+    $.getJSON("https://raw.githubusercontent.com/Coolfire02/Y2S1_WEBDEV_A02/master/html/json/quotes.json", function(json)
     {
         let element = document.getElementById("random-load-text");
         if(element != null)
